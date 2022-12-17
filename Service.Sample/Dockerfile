@@ -1,5 +1,4 @@
-
-FROM microsoft/aspnetcore:2.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 COPY ./publish/ ./
 COPY ./sample.service /lib/systemd/system/
